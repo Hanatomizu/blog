@@ -1,2 +1,7 @@
-# blog
-My personal blog to post some articles
+# Blog
+
+$$
+\large\text{Hello there}
+\\
+\text{This is my personal blog page}
+$$
