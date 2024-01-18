@@ -1,0 +1,73 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  Links: /links
+  About: /about
+
+# 主页banner图
+banner: /banner.jpg 
+
+# 站点通知信息
+#notice: 
+
+# 作者信息
+author:
+  name: Hanatomizu
+  avatar:  
+  description: そう、君は友達 
+
+toc:
+  max_depth: 3 # 生成 TOC 的最大深度
+  min_depth: 2 # 生成 TOC 的最小深度
+
+comments:
+  enable: false
+
+# dplayer 视频播放
+# docs: http://dplayer.js.org/#/zh-Hans/
+dplayer:
+  enable: true
+  theme: "#b7daff"
+  autoplay: false
+  loop: false
+  mutex: true
+
+# aplayer 音频播放
+# docs: https://aplayer.js.org/#/zh-Hans/
+aplayer:
+  enable: true
+  theme: "#b7daff"
+  autoplay: false
+  loop: false
+  mutex: true
+  lrcType: 3
+
+# mathjax LaTeX公式支持
+# docs: http://docs.mathjax.org/en/latest/
+mathjax:
+  enable: true
+
+# polyfill 提供老版浏览器对新语法的支持
+# website: https://polyfill.io/v3/ 
+polyfill:
+  enable: false
+
+
+# 谷歌分析
+#google_analytics: 
+# gauges分析
+#gauges_analytics: 
+# 百度分析
+#baidu_analytics: 
+# 腾讯分析
+#tencent_analytics: 
+# 站点ico
+favicon: /favicon.ico
+
+
+# Social Icon
+social_icon:
+  enable: true
+  icons:
+    github  : https://github.com/hanatomizu
