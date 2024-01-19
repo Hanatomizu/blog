@@ -69,18 +69,18 @@
           <h1 class="title-wrap"><%= page.title %></h1>
           <h2 class="title-sub-wrap">
             <strong><%= page.author || config.author %></strong>
-            <span>发布于</span>
+            <span>Posted on</span>
             <%- partial("../_widget/date", { class_name: 'article-date', post: page, date_format: null }) %>
           </h2>
           <% if ( date(page.updated, null) != date(page.date, null) ) { %>
             <h2 class="last-time">
-              <span>最后更新于</span>
+              <span>Last updated at </span>
               <%- partial("../_widget/updated", { class_name: 'article-updated', post: page, date_format: null }) %>
             </h2>
           <% } %>
           <% if ( theme.comments.enable && theme.comments.use == "valine" && theme.comments.valine.visitor ) { %>
             <h2 id="<%= url_for(page.path) %>" class="title-sub-wrap leancloud_visitors" data-flag-title="<%= page.title %>">
-              <em>文章访问量</em>
+              <em>Reads</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           <% } %>
