@@ -2,11 +2,11 @@
 menu:
   Home: /
   Archives: /archives
-  Links: /links
+  #Links: /links
   About: /about
 
 # 主页banner图
-banner: /banner.jpg 
+banner: https://raw.githubusercontent.com/Hanatomizu/blog/master/source/banner.jpg
 
 # 站点通知信息
 notice: Building Page
@@ -14,7 +14,7 @@ notice: Building Page
 # 作者信息
 author:
   name: Hanatomizu
-  avatar:  
+  avatar:  https://raw.githubusercontent.com/Hanatomizu/blog/master/source/avatar.png
   description: そう、君は友達 
 
 toc:
@@ -31,7 +31,7 @@ comments:
   valine:
     appId: 
     appKey: 
-    placeholder: 随便说点什么叭～ # 评论框占位提示符
+    placeholder: 'Wanna say anything there?～' # 评论框占位提示符
     avatar: mp # Gravatar 头像展示方式
     pageSize: 10 # 评论列表分页，每页条数
     lang: en-us # 多语言支持
