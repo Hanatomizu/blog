@@ -19,12 +19,12 @@
               </a>
             <% } %>
             <div class="card-text--row">
-              <span>发布于</span>
+              <span>Posted on</span>
               <%- partial("../_widget/date", { class_name: 'article-date', post: post, date_format: null }) %>
             </div>
             <% if ( date(post.updated, null) != date(post.date, null) ) { %>
               <div class="last-time">
-                <span>更新于</span>
+                <span>Updated on</span>
                 <%- partial("../_widget/updated", { class_name: 'article-updated', post: post, date_format: null }) %>
               </div>
             <% } %>
