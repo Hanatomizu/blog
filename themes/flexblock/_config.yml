@@ -4,12 +4,13 @@ menu:
   Archives: /archives
   #Links: /links
   About: /about
+  GitHub: https://github.com/Hanatomizu/blog
 
 # 主页banner图
 banner: https://raw.githubusercontent.com/Hanatomizu/blog/master/source/banner.jpg
 
 # 站点通知信息
-notice: This page is currently building.
+notice: The comment system is not available yet, please create issues on GitHub if you have any problems.
 
 # 作者信息
 author:
