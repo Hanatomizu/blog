@@ -157,4 +157,6 @@ When first started neovim you find that it is completely similar to vim. But you
     vim.opt.rtp:prepend(lazypath)
     ```
 
+    
+
 
