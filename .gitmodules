@@ -1,4 +1,0 @@
-[submodule "themes/flexblock"]
-	path = themes/flexblock
-	url = https://github.com/hanatomizu/hexo-theme-flexblock-self-custom
-	branch = blog
