@@ -16,9 +16,9 @@ pygmentsUseClasses = true
   rss = false
   lastmod = false
   userStatusEmoji = "😀"
-  favicon = "/images/github-mark.png"
-  avatar = "/images/hanatomizu.png"
-  headerIcon = "/images/github-mark-white.png"
+  favicon = "/blog/images/github-mark.png"
+  avatar = "/blog/images/hanatomizu.png"
+  headerIcon = "/blog/images/github-mark-white.png"
   location = "Universe"
   enableGitalk = false
 
