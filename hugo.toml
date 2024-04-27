@@ -1,4 +1,4 @@
-baseURL = 'https://hanatomizu.github.io/'
+baseURL = 'https://hanatomizu.github.io/blog'
 languageCode = 'en-us'
 title = 'Chinen Natsuyo | Website'
 theme = 'github-style'
