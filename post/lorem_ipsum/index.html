@@ -76,7 +76,10 @@
     <div class="Header-item d-md-none">
       <button class="Header-link btn-link js-details-target" type="button"
         onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
-        <img height="24" class="octicon octicon-three-bars" width="24" src="/blog/images/github-mark-white.png">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
       </button>
     </div>
     <div style="display: none;" id="header-search"
@@ -84,6 +87,7 @@
       <div
         class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
         <div class="position-relative">
+          
           <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
             autocomplete="off">
             <label
@@ -94,6 +98,7 @@
               <input type="hidden" name="q" value="site:https://hanatomizu.github.io/blog/">
             </label>
           </form>
+          
         </div>
       </div>
     </div>
@@ -116,8 +121,12 @@
   </header>
 </div>
 
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
   
-<div>
+<div class="application-main">
+  <div>
   <main>
     <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
       <div class="px-0">
@@ -208,7 +217,7 @@
 <script type="application/javascript" src='https://hanatomizu.github.io/blog/js/toc.js'></script>
 <link rel="stylesheet" href='https://hanatomizu.github.io/blog/css/toc.css' />
 
-
+  
 <div id="gitalk-container" class="gitalk-container"></div>
 <link rel="stylesheet" href='https://hanatomizu.github.io/blog/css/gitalk.css'>
 <script src='https://hanatomizu.github.io/blog/js/gitalk.min.js'></script>
@@ -227,6 +236,7 @@
   })();
 </script>
 
+</div>
 
   <div class="footer container-xl width-full p-responsive">
   <div
@@ -253,6 +263,9 @@
 </body>
 
 <script type="application/javascript" src="https://hanatomizu.github.io/blog/js/github-style.js"></script>
+
+
+
 
 
 
