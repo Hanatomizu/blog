@@ -152,7 +152,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">1</span>
+              <span class="Counter">2</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -417,7 +417,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">1</span>
+      <span class="Counter ">2</span>
     </a>
   </nav>
 </div>
@@ -431,6 +431,54 @@
         
       
       <ul>
+        
+        <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
+          <div class="col-12 d-inline-block">
+            <div class="d-inline-block mb-1">
+              <h3 class="wb-break-all">
+                <a href="https://hanatomizu.github.io/blog/post/kupc2021_c%E9%A2%98%E8%A7%A3/">Kupc2021_c题解</a>
+              </h3>
+            </div>
+
+            <div>
+              <div class="col-12 d-inline-block text-gray mb-2 pr-4">
+                <p><a href="https://atcoder.jp/contests/kupc2021/tasks/kupc2021_c">题目传送门</a></p>
+<p><strong>思路</strong></p>
+<p>首先根据题目可以知道：</p>
+<ol>
+<li>
+<p>在最优解的情况下第 $i$ 个硬币在第 $i$ 个游戏机（题中的 Gacha）中使用。</p>
+<blockquote>
+<p>题中 $B_j &lt; B_{j+1} (1 \leq j \leq N-1)$ 可以得到。</p>
+</blockquote>
+</li>
+<li>
+<p>整个移动过程可以视作为从 $0$ 开始向正方向移动，得到若干硬币后走回去玩没有玩的游戏机。</p>
+</li>
+</ol>
+<p>得出了以上结论，dp 的思路就清晰了。</p>
+<p>设 $dp_i$ 为玩了前 $i$ 个游戏机时 $B_i$ 的最小值，$m$ 为玩了前 $i$ 个游戏机的迂回成本最小值。得到状态转移方程：
+$$m \gets \min(m, dp_{i-1} - A_i \times 2)$$
+$$dp_i \gets \min(m, dp_{i-1} + B_i \times 2) + B_i \times 2$$</p>
+<p>值得注意的是，对于 $A_i &gt; B_i$ 的情况（即硬币在游戏机前面），可以直接忽略该硬币，把硬币的位置设置为游戏机的位置（即 $A_i \to B_i$）。因为在去往游戏机的路上一定会捡到该硬币。</p>
+<p>得到答案为：
+$$
+ans = \min(dp_n) + \min_{0 \leq i &lt; n}(dp_i + B_n - A_{i+1}) + A_n
+$$</p>
+              </div>
+            </div>
+
+            <div class="f6 text-gray mt-2">
+              
+
+              Created
+              <relative-time datetime=" Mon, 16 Sep 2024 14:50:02 &#43;0800" class="no-wrap"
+                title=" Mon, 16 Sep 2024 14:50:02 &#43;0800">
+                Mon, 16 Sep 2024 14:50:02 &#43;0800
+              </relative-time>
+            </div>
+          </div>
+        </li>
         
         <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
           <div class="col-12 d-inline-block">

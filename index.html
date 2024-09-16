@@ -154,7 +154,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">1</span>
+              <span class="Counter">2</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -419,7 +419,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">1</span>
+      <span class="Counter ">2</span>
     </a>
   </nav>
 </div>
@@ -493,6 +493,56 @@
                       d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
                     </path>
                   </svg>
+                  <a class="text-bold flex-auto min-width-0" href="https://hanatomizu.github.io/blog/post/kupc2021_c%E9%A2%98%E8%A7%A3/">
+                    <span class="repo" title="Kupc2021_c题解">Kupc2021_c题解</span>
+                  </a>
+                </div>
+
+
+                <div name="summary" class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+                  <p><a href="https://atcoder.jp/contests/kupc2021/tasks/kupc2021_c">题目传送门</a></p>
+<p><strong>思路</strong></p>
+<p>首先根据题目可以知道：</p>
+<ol>
+<li>
+<p>在最优解的情况下第 $i$ 个硬币在第 $i$ 个游戏机（题中的 Gacha）中使用。</p>
+<blockquote>
+<p>题中 $B_j &lt; B_{j+1} (1 \leq j \leq N-1)$ 可以得到。</p>
+</blockquote>
+</li>
+<li>
+<p>整个移动过程可以视作为从 $0$ 开始向正方向移动，得到若干硬币后走回去玩没有玩的游戏机。</p>
+</li>
+</ol>
+<p>得出了以上结论，dp 的思路就清晰了。</p>
+<p>设 $dp_i$ 为玩了前 $i$ 个游戏机时 $B_i$ 的最小值，$m$ 为玩了前 $i$ 个游戏机的迂回成本最小值。得到状态转移方程：
+$$m \gets \min(m, dp_{i-1} - A_i \times 2)$$
+$$dp_i \gets \min(m, dp_{i-1} + B_i \times 2) + B_i \times 2$$</p>
+<p>值得注意的是，对于 $A_i &gt; B_i$ 的情况（即硬币在游戏机前面），可以直接忽略该硬币，把硬币的位置设置为游戏机的位置（即 $A_i \to B_i$）。因为在去往游戏机的路上一定会捡到该硬币。</p>
+<p>得到答案为：
+$$
+ans = \min(dp_n) + \min_{0 \leq i &lt; n}(dp_i + B_n - A_{i+1}) + A_n
+$$</p>
+                </div>
+
+                <p class="mb-0 f6 text-gray">
+                  
+                </p>
+              </div>
+            </div>
+          </li>
+          
+          <li class="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
+            <div
+              class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source reorderable sortable-button-item">
+              <div class="pinned-item-list-item-content">
+                <div class="d-flex width-full flex-items-center position-relative">
+                  <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 16 16" version="1.1"
+                    width="16" height="16">
+                    <path fill-rule="evenodd"
+                      d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                    </path>
+                  </svg>
                   <a class="text-bold flex-auto min-width-0" href="https://hanatomizu.github.io/blog/post/lorem_ipsum/">
                     <span class="repo" title="Lorem_ipsum">Lorem_ipsum</span>
                   </a>
@@ -516,6 +566,12 @@
 
     
     <div class="mt-4 position-relative" id="contributions" data='[
+{
+  "title": "Kupc2021_c%e9%a2%98%e8%a7%a3",
+  "link": "https://hanatomizu.github.io/blog/post/kupc2021_c%E9%A2%98%E8%A7%A3/",
+  "publishDate": "2024-09-16%2014:50:02"
+},
+
 {
   "title": "Lorem_ipsum",
   "link": "https://hanatomizu.github.io/blog/post/lorem_ipsum/",

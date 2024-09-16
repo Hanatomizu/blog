@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Chinen Natsuyo | Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Apr 2024 10:10:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2024 14:51:41 +0800</lastBuildDate>
     <atom:link href="https://hanatomizu.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kupc2021_c题解</title>
+      <link>https://hanatomizu.github.io/blog/post/kupc2021_c%E9%A2%98%E8%A7%A3/</link>
+      <pubDate>Mon, 16 Sep 2024 14:50:02 +0800</pubDate>
+      <guid>https://hanatomizu.github.io/blog/post/kupc2021_c%E9%A2%98%E8%A7%A3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/kupc2021/tasks/kupc2021_c&#34;&gt;题目传送门&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;思路&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;首先根据题目可以知道：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在最优解的情况下第 $i$ 个硬币在第 $i$ 个游戏机（题中的 Gacha）中使用。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;题中 $B_j &amp;lt; B_{j+1} (1 \leq j \leq N-1)$ 可以得到。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;整个移动过程可以视作为从 $0$ 开始向正方向移动，得到若干硬币后走回去玩没有玩的游戏机。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;得出了以上结论，dp 的思路就清晰了。&lt;/p&gt;&#xA;&lt;p&gt;设 $dp_i$ 为玩了前 $i$ 个游戏机时 $B_i$ 的最小值，$m$ 为玩了前 $i$ 个游戏机的迂回成本最小值。得到状态转移方程：&#xA;$$m \gets \min(m, dp_{i-1} - A_i \times 2)$$&#xA;$$dp_i \gets \min(m, dp_{i-1} + B_i \times 2) + B_i \times 2$$&lt;/p&gt;&#xA;&lt;p&gt;值得注意的是，对于 $A_i &amp;gt; B_i$ 的情况（即硬币在游戏机前面），可以直接忽略该硬币，把硬币的位置设置为游戏机的位置（即 $A_i \to B_i$）。因为在去往游戏机的路上一定会捡到该硬币。&lt;/p&gt;&#xA;&lt;p&gt;得到答案为：&#xA;$$&#xA;ans = \min(dp_n) + \min_{0 \leq i &amp;lt; n}(dp_i + B_n - A_{i+1}) + A_n&#xA;$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Lorem_ipsum</title>
       <link>https://hanatomizu.github.io/blog/post/lorem_ipsum/</link>
