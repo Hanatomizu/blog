@@ -8,14 +8,14 @@ pygmentsUseClasses = true
 
 [params]
   author = "Hanatomizu"
-  description = "When life gives you lemon, don't make lemonade, make life take the lemons back."
+  description = "永遠なんてないけど、思い通りの日々じゃないけど、脆く弱い糸に繋がれた、次の夜明けがまだ訪れる。"
   github = "Hanatomizu"
   email = "chart11from21@outlook.com"
   url = "https://hanatomizu.github.io/blog"
   keywords = "blog"
   rss = false
   lastmod = false
-  userStatusEmoji = "😀"
+  userStatusEmoji = ""
   favicon = "/blog/images/github-mark.png"
   avatar = "/blog/images/hanatomizu.png"
   headerIcon = "/blog/images/github-mark-white.png"
