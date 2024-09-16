@@ -7,18 +7,34 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
-  author = "Hanatomizu"
-  description = "永遠なんてないけど、思い通りの日々じゃないけど、脆く弱い糸に繋がれた、次の夜明けがまだ訪れる。"
-  github = "Hanatomizu"
-  email = "chart11from21@outlook.com"
-  url = "https://hanatomizu.github.io/blog"
-  keywords = "blog"
-  rss = false
-  lastmod = false
-  userStatusEmoji = ""
-  favicon = "/blog/images/github-mark.png"
-  avatar = "/blog/images/hanatomizu.png"
-  headerIcon = "/blog/images/github-mark-white.png"
-  location = "Universe"
-  enableGitalk = false
+    author = "Hanatomizu"
+    description = "永遠なんてないけど、思い通りの日々じゃないけど、脆く弱い糸に繋がれた、次の夜明けがまだ訪れる。"
+    github = "Hanatomizu"
+    email = "chart11from21@outlook.com"
+    url = "https://hanatomizu.github.io/blog"
+    keywords = "blog"
+    rss = true
+    lastmod = true
+    userStatusEmoji = ""
+    favicon = "/blog/images/github-mark.png"
+    avatar = "/blog/images/hanatomizu.png"
+    headerIcon = "/blog/images/github-mark-white.png"
+    location = "Universe"
+    enableGitalk = true
 
+    [params.gitalk]
+        clientID = "Ov23lic9TU5WTXRCMHtv"
+        clientSecret = "5f9a14fed6d0d8896308f7468f74316d26e10834"
+        repo = "hanatomizu.github.io"
+        owner = "Hanatomizu"
+        admin = "Hanatomizu"
+        id = "location.pathname"
+        labels = "gitalk"
+        perPage = 30
+        pagerDirection = "last"
+        createIssueManually = true
+        distractionFreeMode = false
+
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
