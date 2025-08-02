@@ -502,9 +502,9 @@
                 <div name="summary" class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
                   <p><a href="https://atcoder.jp/contests/abc416/tasks/abc416_c">题目传送门 ABC416C</a></p>
 <h3 id="0x01-思路">0x01 思路</h3>
-<p>注意到数据范围 $1 \leq N \leq 10$, $1 \leq K \leq 5$，可以考虑直接 dfs 暴力枚举每一种组合。</p>
+<p>注意到数据范围 \(1 \leq N \leq 10\), \(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。</p>
 <h3 id="0x02-复杂度分析">0x02 复杂度分析</h3>
-<p>dfs 内枚举 $n$ 个字符串，深度为 $K$，复杂度 $O(N^K)$。找第 $x$ 小的可以使用 <code>nth_element()</code>，线性复杂度。故总复杂度为 $O(N^K)$。</p>
+<p>dfs 内枚举 $n$ 个字符串，深度为 \(K\)，复杂度 \(O(N^K)\)。找第 $x$ 小的可以使用 <code>nth_element()</code>，线性复杂度。故总复杂度为 \(O(N^K)\)。</p>
 <h3 id="0x03-示例代码">0x03 示例代码</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
