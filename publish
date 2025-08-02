@@ -24,6 +24,9 @@ env HUGO_ENV="production" hugo -t github-style
 echo "Updating LICENSE"
 cp LICENSE public/LICENSE
 
+echo "Adding action support"
+cp .github/workflows/deploy.yaml public/.github/workflows/deploy.yaml
+
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -S -m "Publishing to gh-pages ($(git log --all --oneline -n 1 --format=%h))
 Master orinal version: $(git log --all --oneline -n 1 --format=%H%n%s)"
