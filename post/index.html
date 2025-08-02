@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://hanatomizu.github.io/blog/css/light.css' />
     <link rel="stylesheet" href='https://hanatomizu.github.io/blog/css/dark.css' />
     <link rel="stylesheet" href='https://hanatomizu.github.io/blog/css/syntax.css' />
-    <title>Posts - Chinen Natsuyo | Website</title>
+    <title>Posts - Hanatomizu | Secret Base</title>
     
     <link rel="icon" type="image/x-icon" href='/blog/images/github-mark.png'>
     
@@ -26,7 +26,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Posts - Chinen Natsuyo | Website" />
+<meta name="twitter:title" content="Posts - Hanatomizu | Secret Base" />
 <meta name="twitter:description"
   content="" />
 <meta name="twitter:site" content="https://hanatomizu.github.io/blog/" />
@@ -36,7 +36,7 @@
 
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Posts - Chinen Natsuyo | Website">
+<meta property="og:title" content="Posts - Hanatomizu | Secret Base">
 <meta property="og:description"
   content="" />
 <meta property="og:url" content="https://hanatomizu.github.io/blog/post/" />
@@ -49,7 +49,7 @@
 
 
 
-<link href="/blog/post/index.xml" rel="alternate" type="application/rss+xml" title="Chinen Natsuyo | Website" />
+<link href="/blog/post/index.xml" rel="alternate" type="application/rss+xml" title="Hanatomizu | Secret Base" />
 
 
 
@@ -152,7 +152,7 @@
                 </path>
               </svg>
               Posts
-              <span class="Counter">2</span>
+              <span class="Counter">3</span>
             </a>
           </nav>
           <div class="profile-color-modes js-promo-color-modes-banner-profile isInitialToggle">
@@ -417,7 +417,7 @@
         </path>
       </svg>
       Posts
-      <span class="Counter ">2</span>
+      <span class="Counter ">3</span>
     </a>
   </nav>
 </div>
@@ -436,6 +436,73 @@
           <div class="col-12 d-inline-block">
             <div class="d-inline-block mb-1">
               <h3 class="wb-break-all">
+                <a href="https://hanatomizu.github.io/blog/post/abc416c-concatx-th-%E9%A2%98%E8%A7%A3/">ABC416C Concat(X Th) 题解</a>
+              </h3>
+            </div>
+
+            <div>
+              <div class="col-12 d-inline-block text-gray mb-2 pr-4">
+                <p><a href="https://atcoder.jp/contests/abc416/tasks/abc416_c">题目传送门 ABC416C</a></p>
+<h3 id="0x01-思路">0x01 思路</h3>
+<p>注意到数据范围 $1 \leq N \leq 10$, $1 \leq K \leq 5$，可以考虑直接 dfs 暴力枚举每一种组合。</p>
+<h3 id="0x02-复杂度分析">0x02 复杂度分析</h3>
+<p>dfs 内枚举 $n$ 个字符串，深度为 $K$，复杂度 $O(N^K)$。找第 $x$ 小的可以使用 <code>nth_element()</code>，线性复杂度。故总复杂度为 $O(N^K)$。</p>
+<h3 id="0x03-示例代码">0x03 示例代码</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> ll <span style="color:#f92672">=</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">umax</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">&amp;</span>x, <span style="color:#66d9ef">int</span> y) {(x <span style="color:#f92672">&lt;</span> y) <span style="color:#f92672">&amp;&amp;</span> (x <span style="color:#f92672">=</span> y);}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">umin</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">&amp;</span>x, <span style="color:#66d9ef">int</span> y) {(x <span style="color:#f92672">&gt;</span> y) <span style="color:#f92672">&amp;&amp;</span> (x <span style="color:#f92672">=</span> y);}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> n, k, x;
+</span></span><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span>string<span style="color:#f92672">&gt;</span> s;
+</span></span><span style="display:flex;"><span>string re[<span style="color:#ae81ff">100005</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> cnt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">dfs</span>(<span style="color:#66d9ef">int</span> deps, string ss) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (deps <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) { <span style="color:#66d9ef">return</span> re[<span style="color:#f92672">++</span>cnt] <span style="color:#f92672">=</span> ss, <span style="color:#66d9ef">void</span>(); }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; <span style="color:#f92672">++</span>i) {
+</span></span><span style="display:flex;"><span>        dfs(deps<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, ss<span style="color:#f92672">+</span>s[i]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#ifdef HANATOMIZU_LOCAL_TEST
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    freopen(<span style="color:#e6db74">&#34;input.in&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>, stdin);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#endif </span><span style="color:#75715e">// HANATOMIZU_LOCAL_TEST
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    ios<span style="color:#f92672">::</span>sync_with_stdio(<span style="color:#ae81ff">0</span>), cin.tie(<span style="color:#ae81ff">0</span>), cout.tie(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> k <span style="color:#f92672">&gt;&gt;</span> x;
+</span></span><span style="display:flex;"><span>    s.resize(n<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> n; <span style="color:#f92672">++</span>i) {
+</span></span><span style="display:flex;"><span>        cin <span style="color:#f92672">&gt;&gt;</span> s[i];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    dfs(k, string());
+</span></span><span style="display:flex;"><span>    nth_element(re<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, re<span style="color:#f92672">+</span>x, re<span style="color:#f92672">+</span>cnt<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> re[x] <span style="color:#f92672">&lt;&lt;</span> endl;;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+              </div>
+            </div>
+
+            <div class="f6 text-gray mt-2">
+              
+
+              Created
+              <relative-time datetime=" Sat, 02 Aug 2025 12:13:00 &#43;0800" class="no-wrap"
+                title=" Sat, 02 Aug 2025 12:13:00 &#43;0800">
+                Sat, 02 Aug 2025 12:13:00 &#43;0800
+              </relative-time>
+            </div>
+          </div>
+        </li>
+        
+        <li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
+          <div class="col-12 d-inline-block">
+            <div class="d-inline-block mb-1">
+              <h3 class="wb-break-all">
                 <a href="https://hanatomizu.github.io/blog/post/kupc2021_c%E9%A2%98%E8%A7%A3/">Kupc2021_c题解</a>
               </h3>
             </div>
@@ -449,8 +516,7 @@
 <li>
 <p>在最优解的情况下第 $i$ 个硬币在第 $i$ 个游戏机（题中的 Gacha）中使用。</p>
 <blockquote>
-<p>题中 $B_j &lt; B_{j+1} (1 \leq j \leq N-1)$ 可以得到。</p>
-</blockquote>
+<p>题中 $B_j &lt; B_{j+1} (1 \leq j \leq N-1)$ 可以得到。</p></blockquote>
 </li>
 <li>
 <p>整个移动过程可以视作为从 $0$ 开始向正方向移动，得到若干硬币后走回去玩没有玩的游戏机。</p>
