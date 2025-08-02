@@ -1,6 +1,6 @@
 baseURL = 'https://hanatomizu.github.io/blog/'
 languageCode = 'en-us'
-title = 'Chinen Natsuyo | Website'
+title = 'Hanatomizu | Secret Base'
 theme = 'github-style'
 
 pygmentsCodeFences = true
