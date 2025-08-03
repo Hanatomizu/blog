@@ -221,6 +221,7 @@
 <div id="gitalk-container" class="gitalk-container"></div>
 <link rel="stylesheet" href='https://hanatomizu.github.io/blog/css/gitalk.css'>
 <script src='https://hanatomizu.github.io/blog/js/gitalk.min.js'></script>
+<script src='js/md5.min.js'></script>
 <script>
   const gitalk = new Gitalk({
     clientID: 'Ov23lic9TU5WTXRCMHtv',
@@ -228,7 +229,7 @@
     repo: 'blog',
     owner: 'Hanatomizu',
     admin: ['Hanatomizu'],
-    id: eval("location.pathname"), 
+    id: md5("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {
