@@ -9,7 +9,7 @@ draft = false
 [题目传送门 ABC416C](https://atcoder.jp/contests/abc416/tasks/abc416_c)
 
 ### 0x01 思路
-注意到数据范围 \\(1 \leq N \leq 10\\), \\(1 \leq K \leq 5\\)，可以考虑直接 dfs 暴力枚举每一种组合。
+注意到数据范围 \\(1 \leq N \leq 10\\)，\\(1 \leq K \leq 5\\)，可以考虑直接 dfs 暴力枚举每一种组合。
 
 ### 0x02 复杂度分析
 dfs 内枚举 $n$ 个字符串，深度为 \\(K\\)，复杂度 \\(O(N^K)\\)。找第 $x$ 小的可以使用 `nth_element()`，线性复杂度。故总复杂度为 \\(O(N^K)\\)。
