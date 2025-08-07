@@ -1,0 +1,22 @@
+<div class="pdf-container">
+  <object data="{{ .Get "src" | absURL }}" type="application/pdf" width="100%" height="600px">
+    <p>您的浏览器不支持PDF预览，
+      请<a href="{{ .Get "src" | absURL }}">点击下载文件</a>
+    </p>
+  </object>
+</div>
+
+<style>
+  .pdf-container { 
+    /* border: 1px solid #eee;  */
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .pdf-download {
+    text-align: center;
+    padding: 10px;
+    /* background: #f8f9fa; */
+    /* border-top: 1px solid #eee; */
+  }
+</style>
