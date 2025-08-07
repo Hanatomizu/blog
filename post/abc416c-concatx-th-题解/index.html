@@ -19,7 +19,7 @@
     
     <meta name="description"
   content="题目传送门 ABC416C
-0x01 思路 注意到数据范围 \(1 \leq N \leq 10\), \(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。
+0x01 思路 注意到数据范围 \(1 \leq N \leq 10\)，\(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。
 0x02 复杂度分析 dfs 内枚举 $n$ 个字符串，深度为 \(K\)，复杂度 \(O(N^K)\)。找第 $x$ 小的可以使用 nth_element()，线性复杂度。故总复杂度为 \(O(N^K)\)。
 0x03 示例代码 #include &lt;bits/stdc&#43;&#43;.h&gt; using namespace std; using ll = long long; inline void umax(int &amp;x, int y) {(x &lt; y) &amp;&amp; (x = y);} inline void umin(int &amp;x, int y) {(x &gt; y) &amp;&amp; (x = y);} int n, k, x; vector&lt;string&gt; s; string re[100005]; int cnt; void dfs(int deps, string ss) { if (deps == 0) { return re[&#43;&#43;cnt] = ss, void(); } for (int i = 1; i &lt;= n; &#43;&#43;i) { dfs(deps-1, ss&#43;s[i]); } } signed main(){ #ifdef HANATOMIZU_LOCAL_TEST freopen(&#34;input.in&#34;, &#34;r&#34;, stdin); #endif // HANATOMIZU_LOCAL_TEST ios::sync_with_stdio(0), cin.tie(0), cout.tie(0); cin &gt;&gt; n &gt;&gt; k &gt;&gt; x; s.resize(n&#43;1); for (int i = 1; i &lt;= n; &#43;&#43;i) { cin &gt;&gt; s[i]; } dfs(k, string()); nth_element(re&#43;1, re&#43;x, re&#43;cnt&#43;1); cout &lt;&lt; re[x] &lt;&lt; endl;; return 0; } " />
 <meta name="keywords"
@@ -32,7 +32,7 @@
 <meta name="twitter:title" content="ABC416C Concat(X Th) 题解 - Hanatomizu | Secret Base" />
 <meta name="twitter:description"
   content="题目传送门 ABC416C
-0x01 思路 注意到数据范围 \(1 \leq N \leq 10\), \(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。
+0x01 思路 注意到数据范围 \(1 \leq N \leq 10\)，\(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。
 0x02 复杂度分析 dfs 内枚举 $n$ 个字符串，深度为 \(K\)，复杂度 \(O(N^K)\)。找第 $x$ 小的可以使用 nth_element()，线性复杂度。故总复杂度为 \(O(N^K)\)。
 0x03 示例代码 #include &lt;bits/stdc&#43;&#43;.h&gt; using namespace std; using ll = long long; inline void umax(int &amp;x, int y) {(x &lt; y) &amp;&amp; (x = y);} inline void umin(int &amp;x, int y) {(x &gt; y) &amp;&amp; (x = y);} int n, k, x; vector&lt;string&gt; s; string re[100005]; int cnt; void dfs(int deps, string ss) { if (deps == 0) { return re[&#43;&#43;cnt] = ss, void(); } for (int i = 1; i &lt;= n; &#43;&#43;i) { dfs(deps-1, ss&#43;s[i]); } } signed main(){ #ifdef HANATOMIZU_LOCAL_TEST freopen(&#34;input.in&#34;, &#34;r&#34;, stdin); #endif // HANATOMIZU_LOCAL_TEST ios::sync_with_stdio(0), cin.tie(0), cout.tie(0); cin &gt;&gt; n &gt;&gt; k &gt;&gt; x; s.resize(n&#43;1); for (int i = 1; i &lt;= n; &#43;&#43;i) { cin &gt;&gt; s[i]; } dfs(k, string()); nth_element(re&#43;1, re&#43;x, re&#43;cnt&#43;1); cout &lt;&lt; re[x] &lt;&lt; endl;; return 0; } " />
 <meta name="twitter:site" content="https://hanatomizu.github.io/blog/" />
@@ -45,7 +45,7 @@
 <meta property="og:title" content="ABC416C Concat(X Th) 题解 - Hanatomizu | Secret Base">
 <meta property="og:description"
   content="题目传送门 ABC416C
-0x01 思路 注意到数据范围 \(1 \leq N \leq 10\), \(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。
+0x01 思路 注意到数据范围 \(1 \leq N \leq 10\)，\(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。
 0x02 复杂度分析 dfs 内枚举 $n$ 个字符串，深度为 \(K\)，复杂度 \(O(N^K)\)。找第 $x$ 小的可以使用 nth_element()，线性复杂度。故总复杂度为 \(O(N^K)\)。
 0x03 示例代码 #include &lt;bits/stdc&#43;&#43;.h&gt; using namespace std; using ll = long long; inline void umax(int &amp;x, int y) {(x &lt; y) &amp;&amp; (x = y);} inline void umin(int &amp;x, int y) {(x &gt; y) &amp;&amp; (x = y);} int n, k, x; vector&lt;string&gt; s; string re[100005]; int cnt; void dfs(int deps, string ss) { if (deps == 0) { return re[&#43;&#43;cnt] = ss, void(); } for (int i = 1; i &lt;= n; &#43;&#43;i) { dfs(deps-1, ss&#43;s[i]); } } signed main(){ #ifdef HANATOMIZU_LOCAL_TEST freopen(&#34;input.in&#34;, &#34;r&#34;, stdin); #endif // HANATOMIZU_LOCAL_TEST ios::sync_with_stdio(0), cin.tie(0), cout.tie(0); cin &gt;&gt; n &gt;&gt; k &gt;&gt; x; s.resize(n&#43;1); for (int i = 1; i &lt;= n; &#43;&#43;i) { cin &gt;&gt; s[i]; } dfs(k, string()); nth_element(re&#43;1, re&#43;x, re&#43;cnt&#43;1); cout &lt;&lt; re[x] &lt;&lt; endl;; return 0; } " />
 <meta property="og:url" content="https://hanatomizu.github.io/blog/post/abc416c-concatx-th-%E9%A2%98%E8%A7%A3/" />
@@ -162,9 +162,9 @@
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sat, 02 Aug 2025 12:58:39 &#43;0800"
+                  Modified <relative-time datetime="Thu, 07 Aug 2025 22:38:06 &#43;0800"
                     class="no-wrap">
-                    Sat, 02 Aug 2025 12:58:39 &#43;0800</relative-time>
+                    Thu, 07 Aug 2025 22:38:06 &#43;0800</relative-time>
                   
                 </div>
               </div>
@@ -194,7 +194,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      261 Words
+                      267 Words
                     
 
                   </div>
@@ -208,7 +208,7 @@
               <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><p><a href="https://atcoder.jp/contests/abc416/tasks/abc416_c">题目传送门 ABC416C</a></p>
 <h3 id="0x01-思路">0x01 思路</h3>
-<p>注意到数据范围 \(1 \leq N \leq 10\), \(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。</p>
+<p>注意到数据范围 \(1 \leq N \leq 10\)，\(1 \leq K \leq 5\)，可以考虑直接 dfs 暴力枚举每一种组合。</p>
 <h3 id="0x02-复杂度分析">0x02 复杂度分析</h3>
 <p>dfs 内枚举 $n$ 个字符串，深度为 \(K\)，复杂度 \(O(N^K)\)。找第 $x$ 小的可以使用 <code>nth_element()</code>，线性复杂度。故总复杂度为 \(O(N^K)\)。</p>
 <h3 id="0x03-示例代码">0x03 示例代码</h3>
