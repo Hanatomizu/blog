@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Hanatomizu | Secret Base</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Aug 2025 22:38:06 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 Aug 2025 10:31:58 +0800</lastBuildDate>
     <atom:link href="https://hanatomizu.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pandas备考复习笔记</title>
+      <link>https://hanatomizu.github.io/blog/post/pandas%E5%A4%87%E8%80%83%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/pandas%E5%A4%87%E8%80%83%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 09 Aug 2025 10:29:41 +0800</pubDate>
+      <guid>https://hanatomizu.github.io/blog/post/pandas%E5%A4%87%E8%80%83%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/pandas%E5%A4%87%E8%80%83%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;div class=&#34;pdf-container&#34;&gt;&#xA;  &lt;object data=&#34;https://hanatomizu.github.io/blog/post/Pandas%E5%A4%87%E8%80%83%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/content.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;    &lt;p&gt;您的浏览器不支持PDF预览，&#xA;      请&lt;a href=&#34;https://hanatomizu.github.io/blog/post/Pandas%E5%A4%87%E8%80%83%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/content.pdf&#34;&gt;点击下载文件&lt;/a&gt;&#xA;    &lt;/p&gt;&#xA;  &lt;/object&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;  .pdf-container { &#xA;     &#xA;    margin: 1.5rem 0;&#xA;    border-radius: 5px;&#xA;    overflow: hidden;&#xA;  }&#xA;  .pdf-download {&#xA;    text-align: center;&#xA;    padding: 10px;&#xA;     &#xA;     &#xA;  }&#xA;&lt;/style&gt;</description>
+    </item>
     <item>
       <title>Python基础语法学习笔记</title>
       <link>https://hanatomizu.github.io/blog/post/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 07 Aug 2025 10:46:24 +0800</pubDate>
       <guid>https://hanatomizu.github.io/blog/post/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;div class=&#34;pdf-container&#34;&gt;&#xA;  &lt;object data=&#34;https://hanatomizu.github.io/blog/post/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/content.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;&#xA;    &lt;p&gt;您的浏览器不支持PDF预览，&#xA;      请&lt;a href=&#34;https://hanatomizu.github.io/blog/post/Python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/content.pdf&#34;&gt;点击下载文件&lt;/a&gt;&#xA;    &lt;/p&gt;&#xA;  &lt;/object&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;  .pdf-container { &#xA;     &#xA;    margin: 1.5rem 0;&#xA;    border-radius: 5px;&#xA;    overflow: hidden;&#xA;  }&#xA;  .pdf-download {&#xA;    text-align: center;&#xA;    padding: 10px;&#xA;     &#xA;     &#xA;  }&#xA;&lt;/style&gt;</description>
-    </item>
-    <item>
-      <title>关于 解析几何初步 椭圆 的一些奇技淫巧</title>
-      <link>https://hanatomizu.github.io/blog/post/%E5%85%B3%E4%BA%8E-%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E5%88%9D%E6%AD%A5-%E6%A4%AD%E5%9C%86-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</link>
-      <pubDate>Sat, 02 Aug 2025 22:32:01 +0800</pubDate>
-      <guid>https://hanatomizu.github.io/blog/post/%E5%85%B3%E4%BA%8E-%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95%E5%88%9D%E6%AD%A5-%E6%A4%AD%E5%9C%86-%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;本文章处于未完工状态（WIP）&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;规定&#34;&gt;规定&lt;/h3&gt;&#xA;&lt;p&gt;椭圆中 $a$ 为半长轴，$b$ 为半短轴，$c$ 为半焦距，满足 $a^2 = b^2 + c^2$&#xA;椭圆方程为：$\displaystyle\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$&lt;br&gt;&#xA;斜线方程为：$f(x) = kx + m$&lt;br&gt;&#xA;斜率的公式为：$\displaystyle k = \frac{y - y_1}{x - x_1}$&lt;br&gt;&#xA;斜线与椭圆交于 $A(x_1, y_1)$, $B(x_2, y_2)$ 两点&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;结论&#34;&gt;结论&lt;/h3&gt;&#xA;&lt;p&gt;&lt;del&gt;证明先放着&lt;/del&gt;&lt;/p&gt;&#xA;&lt;p&gt;$$\displaystyle |AB| = \sqrt{1+k^2}|x_2 - x_1| = \sqrt{1 + \frac{1}{k^2}}|y_2 - y_1|$$&lt;/p&gt;&#xA;&lt;p&gt;$$\displaystyle |x_2 - x_1| = \frac{\sqrt{ -4(-a^2b^2)(b^2+a^2k^2 - m^2) }}{|b^2 + a^2k^2|}$$&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;解题基本思路&#34;&gt;解题基本思路&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;通过斜线 $l_{AB}$, 联立方程&#xA;&lt;details&gt;&#xA;  &lt;summary&gt;具体过程&lt;/summary&gt;&#xA;  &lt;p&gt;&lt;/p&gt;&#xA;  &lt;blockquote&gt;&#xA;&lt;p&gt;联立椭圆方程和斜线方程&lt;br&gt;&#xA;$$\displaystyle&#xA;\begin{cases}&#xA;\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \newline&#xA;y = kx + m&#xA;\end{cases}$$&#xA;椭圆方程同乘 $a^2b^2$ 得到&lt;br&gt;&#xA;$$\displaystyle&#xA;\begin{cases}&#xA;b^2x^2 + a^2y^2 = a^2b^2 \newline&#xA;y = kx + m&#xA;\end{cases}$$&#xA;将 $y$ 带入&lt;br&gt;&#xA;$$\displaystyle b^2x^2 + a^2(kx+m)^2 = a^2b^2$$&lt;/p&gt;</description>
     </item>
     <item>
       <title>ABC416C Concat(X Th) 题解</title>
